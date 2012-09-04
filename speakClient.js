@@ -20,7 +20,7 @@
   try {
     speakWorker = new Worker('speakWorker.js');
   } catch(e) {
-    console.log('speak.js warning: no worker support');
+    console.log('speak.js warning: no worker support. \nException:\n' + e.toString());
   }
 
   speak.pause = function() {
